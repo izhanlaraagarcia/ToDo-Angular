@@ -1,0 +1,52 @@
+<div class="home-container">
+  <div class="home-header">
+    <h1>Mis Tareas</h1>
+    <p class="subtitle">Organiza tu día de manera eficiente</p>
+  </div>
+
+  <app-components (taskAddedParent)="onTaskAddedFromChild($event)"></app-components>
+
+  <div class="tasks-section">
+    <div class="task-counter" *ngIf="tasks.length > 0">
+      <div class="counter-item">
+        <span>Total de tareas:</span>
+        <span class="counter-number">{{ tasks.length }}</span>
+      </div>
+      <div class="counter-item">
+        <span>Completadas:</span>
+        <span class="counter-number">{{ getCompletedTasksCount() }}</span>
+      </div>
+    </div>
+
+    <ul class="tasks-list" *ngIf="tasks.length > 0; else emptyState">
+      <li class="task-item" *ngFor="let t of tasks; let i = index" [class.completed]="t.completed">
+        <div class="task-content">
+          <div class="task-icon">{{ i + 1 }}</div>
+          <span class="task-text" [class.completed-text]="t.completed">{{ t.text }}</span>
+        </div>
+        <div class="task-actions">
+          <button class="btn btn-edit" (click)="onTaskEditedFromChild(i, t.text)">
+            ✏️ Editar
+          </button>
+          <button class="btn btn-delete" (click)="onTaskDeletedFromChild(i)">
+            🗑️ Eliminar
+          </button>
+          <button class="btn btn-complete" (click)="onTaskCompletedFromChild(i)">
+            <span *ngIf="!t.completed">✅</span>
+            <span *ngIf="t.completed">✅</span>
+          </button>
+        </div>
+      </li>
+    </ul>
+
+    <ng-template #emptyState>
+      <div class="empty-state">
+        <div class="empty-icon">📝</div>
+        <h3 class="empty-title">¡No hay tareas aún!</h3>
+        <p class="empty-description">
+          Comienza agregando tu primera tarea usando el formulario de arriba
+        </p>
+      </div>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="add-task-container">
+  <div class="add-task-header">
+    <h2>Agregar Nueva Tarea</h2>
+    <p class="description">Escribe una tarea y presiona agregar para añadirla a tu lista</p>
+  </div>
+
+  <form class="add-task-form" (ngSubmit)="addTask()">
+    <div class="input-group">
+      <label for="newTask">Descripción de la tarea</label>
+      <input
+        id="newTask"
+        class="task-input"
+        [(ngModel)]="newTask"
+        name="newTask"
+        placeholder="Ej: Comprar leche, estudiar Angular..."
+        autocomplete="off"
+        maxlength="100"
+      />
+    </div>
+    <button
+      type="submit"
+      class="add-button"
+      [disabled]="!newTask || newTask.trim() === ''"
+    >
+      Agregar
+    </button>
+  </form>
+
+  <div class="add-task-tips">
+    <div class="tips-title">Consejos</div>
+    <ul class="tips-list">
+      <li>Sé específico en la descripción de tu tarea</li>
+      <li>Presiona Enter para agregar rápidamente</li>
+      <li>Las tareas vacías no se pueden agregar</li>
+    </ul>
+  </div>
+</div>

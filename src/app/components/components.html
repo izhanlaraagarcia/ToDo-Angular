@@ -1,0 +1,10 @@
+<div class="components-container">
+  <div class="components-wrapper component-enter">
+    <app-add-task (taskAddedParent)="onTaskAdded($event)"></app-add-task>
+
+    <div class="section-divider"></div>
+
+    <app-edit-task (taskEditedPattern)="onTaskEdited($event)"></app-edit-task>
+    <app-delete-task (taskDeletedParent)="onTaskDeleted($event)"></app-delete-task>
+  </div>
+</div>
