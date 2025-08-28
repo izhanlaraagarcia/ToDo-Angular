@@ -197,7 +197,7 @@ http://localhost:4200
 
 ### 📦 **Interfaz de Usuario**
 
-![Interfaz de Usuario](/ToDo-Angular/src/app/assets/images/image.png)
+![Interfaz de Usuario]([/ToDo-Angular/src/app/assets/images/image.png](https://github.com/izhanlaraagarcia/ToDo-Angular/blob/main/src/app/assets/images/image.png?raw=true))
 
 
 ## 🔍 Estructura de Datos
