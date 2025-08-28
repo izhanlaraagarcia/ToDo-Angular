@@ -261,5 +261,4 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ---
 
 ⭐ **¡Dale una estrella al proyecto si te ayudó a aprender Angular!** ⭐
-#   T o D o - A n g u l a r  
- 
+#
