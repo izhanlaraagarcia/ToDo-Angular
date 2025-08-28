@@ -197,7 +197,7 @@ http://localhost:4200
 
 ### 📦 **Interfaz de Usuario**
 
-![Interfaz de Usuario]([/ToDo-Angular/src/app/assets/images/image.png](https://github.com/izhanlaraagarcia/ToDo-Angular/blob/main/src/app/assets/images/image.png?raw=true))
+![Interfaz de Usuario](https://github.com/izhanlaraagarcia/ToDo-Angular/blob/main/src/app/assets/images/image.png?raw=true)
 
 
 ## 🔍 Estructura de Datos
@@ -256,7 +256,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 👨‍💻 Autor
 
-**Tu Nombre** - [GitHub](https://github.com/izhanlaraagarcia)
+**Izhan Lara Garcia** - [GitHub](https://github.com/izhanlaraagarcia)
 
 ---
 
